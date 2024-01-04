@@ -32,9 +32,8 @@ cd discord-llm-chatbot
 pip install -r requirements.txt
 ```
 
-
 ## Download LLM (Large Language Model)
-Skip this step if you already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
+Skip if you've already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
 ```bash
@@ -51,7 +50,7 @@ do
 done
 ```
 
-Note: If you need to replace the URL, make sure to include the '?download=true' parameter. 
+#### Note: If you need to replace the URL, make sure to include the '?download=true' parameter. 
 
 ```bash
 sudo chmod 775 red.sh
@@ -61,7 +60,7 @@ sudo chmod 775 red.sh
 ./red.sh
 ```
 
-Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
+#### Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
 
 ## Create a Discord Application:
 
