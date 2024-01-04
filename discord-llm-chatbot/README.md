@@ -26,3 +26,33 @@ git sparse-checkout set --no-cone discord-llm-chatbot
 git checkout
 cd discord-llm-chatbot
 ```
+
+## Download LLM Model
+Head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
+
+###If you have shitty internet create the following script
+```bash
+nano red.sh
+'''
+
+###Copy and past the following
+
+```bash
+#!/bin/bash
+
+while true
+do
+    wget -c --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 -t 0 "https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/resolve/main/mistral-7b-v0.1.Q4_K_M.gguf?download=true"
+    sleep 10s
+done
+'''
+
+###Set permissions
+```bash
+sudo chmod 775 red,sh
+'''
+
+###Run script
+```bash
+./red.sh
+'''
