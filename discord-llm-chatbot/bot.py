@@ -1,10 +1,7 @@
-import os
-import sys
-from dotenv import load_dotenv
 import asyncio
 import datetime
-import threading
 import discord
+from dotenv import load_dotenv
 from discord.ext import commands
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
@@ -12,6 +9,9 @@ from langchain.llms import GPT4All
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferWindowMemory
+import os
+import sys
+import threading
 
 #Configuration
 MODEL_PATH = "mistral-7b-v0.1.Q4_K_M.gguf"
