@@ -1,6 +1,6 @@
 <div align="center">
   <h3>
-   [Bash](https://github.com/shaunbarnard/python/#bash) | [PHP](https://github.com/shaunbarnard/python/#php) | [Python](https://github.com/shaunbarnard/python/#python)
+   [Bash](https://github.com/shaunbarnard/python#bash) | [PHP](https://github.com/shaunbarnard/python#php) | [Python](https://github.com/shaunbarnard/python#python)
   </h3>
 </div>
 
