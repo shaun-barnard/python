@@ -1,6 +1,6 @@
-[Bash](#Bash)
-[PHP](#PHP)
-[Python](#Python)
+[Bash](#bash)
+[PHP](#php)
+[Python](#python)
 
 #### Bash
 
