@@ -22,7 +22,7 @@ conda create -n <env name> python=3.10
 conda activate <env name>
 ```
 
-#### 2. Create a new folder for this repository on your local machine
+#### 2. Create a new folder for this repository
 ```bash
 mkdir <repo>
 cd <repo>
@@ -48,7 +48,7 @@ cd discord-llm-chatbot
 #### 6. Install the necessary Python dependencies
 ```bash
 pip install -r requirements.txt
-```
+``` 
 
 ## Download LLM (Large Language Model)
 Skip if you've already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
