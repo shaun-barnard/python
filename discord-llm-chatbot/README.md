@@ -128,7 +128,7 @@ BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact w
 sudo nano .env
 ```
 
-**4. Paste in your API Token to the newly created .env file**
+**4. Paste your API Token into the newly created .env file**
 
 ```bash
 API_KEY=<your bot's discord token>
