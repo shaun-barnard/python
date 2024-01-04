@@ -134,6 +134,11 @@ sudo nano .env
 API_KEY=<your bot's discord token>
 ```
 
+**5. Rename the downloaded file**
+```bash
+sudo mv 'mistral-7b-v0.1.Q4_K_M.gguf?download=true' mistral-7b-v0.1.Q4_K_M.gguf
+```
+
 ## Run the bot
 
 ```bash
