@@ -121,7 +121,7 @@ sudo nano .env
 **4. Paste in your API Token to newly created .env file**
 
 ```bash
-API_KEY=<url discord token>
+API_KEY=<your bot's discord token>
 ```
 
 ## Run the bot
