@@ -5,23 +5,23 @@ Basic Discord chatbot using [Discord Pi](https://github.com/Rapptz/discord.py) a
 ## Installation
 
 ### 1. Initialize a new Git repository on your local machine
-```
-bash git init <repo>
+```bash
+git init <repo>
 cd <repo>
 ```
 
 ### 2. Add this repository to the specific folder:
-```
+```bash
 git remote add -f origin https://github.com/shaunbarnard/python.git
 ```
 
-### 3. Enable the sparse-checkout feature and specify the folder (llm-discord-chatbot) you want to clone:
-```
+### 3. Enable the sparse-checkout feature and specify the folder you want to clone. In this case (llm-discord-chatbot):
+```bash
 git sparse-checkout init --cone
 git sparse-checkout set llm-discord-chatbot
 ```
 
 ### 4. Finally, check out the contents of the specified folder (llm-discord-chatbot)
-```
+```bash
 git checkout @
 ```
