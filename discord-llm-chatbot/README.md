@@ -1,4 +1,4 @@
-#Basic Python Discord LLM Chatbot
+## Basic Python Discord LLM Chatbot
 
 Basic Discord chatbot using [Discord Pi](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging language models (LLM), and conversational memory to provide engaging responses.
 
@@ -26,7 +26,7 @@ git sparse-checkout set llm-discord-chatbot
 git checkout @
 ```
 
-This approach allows you to work with only the contents of the specified folder ([llm-discord-chatbot]), rather than cloning my entire Python repository and then removing unwanted files and folders.
+This approach allows you to work with only the contents of the specified folder ([llm-discord-chatbot])(https://github.com/langchain-ai/langchain), rather than cloning my entire Python repository and then removing unwanted files and folders.
 
 ```py
 from tinygrad import Tensor, nn
