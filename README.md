@@ -4,10 +4,6 @@
   <a href="#python" style="font-size: 24px;">Python</a>
 </p>
 
-[Bash](#bash)
-[PHP](#php)
-[Python](#python)
-
 #### Bash
 
 #### PHP
