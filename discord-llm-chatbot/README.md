@@ -1,6 +1,6 @@
-## Basic Python Discord LLM Chatbot
+## Python Discord LLM Chatbot
 
-Basic Discord chatbot using [Discord Pi](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging language models (LLM), and conversational memory to provide engaging responses.
+Basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging language models (LLM), and conversational memory to provide engaging responses.
 
 ## Installation
 
