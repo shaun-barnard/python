@@ -96,14 +96,14 @@ sudo chmod 775 red.sh
 
 ## 4. Configuration
 
-1. Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
+**1. Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.**
 
 ```py
 #Set model path
 model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 ```
 
-and adjust the remaining config settings as necessary
+**2. Adjust the remaining configuration settings as necessary**
 
 ```py
 BOT_PREFIX_ON = False
@@ -112,17 +112,19 @@ BOT_CHANNEL_MESSAGE_ON = True
 BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"
 ```
 
-3. Create .env file and set to your Discord Bot's API
+**3. Create .env file to your store Discord Bot's API Token**
 
 ```bash
 sudo nano .env
 ```
 
+**4. Paste in your API Token to newly created .env file**
+
 ```bash
 API_KEY=<url discord token>
 ```
 
-## Run bot.py
+## Finally, run the bot
 
 ```bash
 python bot.py
