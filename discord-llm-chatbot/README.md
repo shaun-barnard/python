@@ -2,6 +2,14 @@
 
 A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLM), and conversational memory to provide engaging responses.
 
+<p align="center">
+  <a href="#installation" style="font-size: 24px;">Install</a> |
+  <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
+  <a href="#create-a-discord-application" style="font-size: 24px;">Create Discord Application</a>
+  <a href="#configuration" style="font-size: 24px;">Configuration</a>
+  <a href="#run-botpy-botpy" style="font-size: 24px;">Run</a>
+</p>
+
 ## Installation
 
 #### 1. Create new folder for repo on your local machine
@@ -69,24 +77,24 @@ sudo chmod 775 red.sh
 
 ## Create a Discord Application:
 
-### Create a Discord Bot
+### 1. Create a Discord Bot
 1. Log in to the [Discord Developer Portal](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications).
 2. Click on the "New Application" button.
 3. Give your application a name and confirm the creation.
 
-### Create a Bot Account
+### 2. Create a Bot Account
 1. Navigate to the "Bot" tab to configure the bot.
 2. Check the "Public Bot" option if you want others to invite your bot.
 3. Tick the "bot" checkbox under "scopes" and set the necessary permissions for your bot.
 4. Copy the bot's token to use it in your bot's code.
 
-### Add the Bot to a Discord Server
+### 3. Add the Bot to a Discord Server
 1. Use the bot's token to invite the bot to your Discord server.
 2. Set the appropriate permissions for your bot.
 
 Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)
 
-## Config
+## 4. Configuration
 
 1. Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
 
@@ -105,7 +113,7 @@ sudo nano .env
 API_KEY=<url discord token>
 ```
 
-## Run bot.py [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py)
+## Run bot.py
 
 ```bash
 python bot.py
