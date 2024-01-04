@@ -3,7 +3,7 @@
   <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
   <a href="#create-a-discord-application" style="font-size: 24px;">Create Discord Application</a> |
   <a href="#configuration" style="font-size: 24px;">Configuration</a> |
-  <a href="#run-botpy-botpy" style="font-size: 24px;">Run</a>
+  <a href="#run-the-bot" style="font-size: 24px;">Run</a>
 </p>
 
 ## Python Discord LLM (Large Language Model) Chatbot
@@ -94,7 +94,7 @@ sudo chmod 775 red.sh
 
 *Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)*
 
-## 4. Configuration
+## Configuration
 
 **1. Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.**
 
@@ -124,7 +124,7 @@ sudo nano .env
 API_KEY=<url discord token>
 ```
 
-## Finally, run the bot
+## Run the bot
 
 ```bash
 python bot.py
