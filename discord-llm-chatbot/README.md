@@ -85,7 +85,7 @@ sudo chmod 775 red.sh
 
 *Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.*
 
-#### 5. Rename the downloaded file
+#### 5. Rename the downloaded model
 ```bash
 sudo mv 'mistral-7b-v0.1.Q4_K_M.gguf?download=true' 'mistral-7b-v0.1.Q4_K_M.gguf'
 ```
