@@ -1,8 +1,8 @@
 <p align="center">
   <a href="#installation" style="font-size: 24px;">Install</a> |
   <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
-  <a href="#create-a-discord-application" style="font-size: 24px;">Create Discord Application</a>
-  <a href="#configuration" style="font-size: 24px;">Configuration</a>
+  <a href="#create-a-discord-application" style="font-size: 24px;">Create Discord Application</a> |
+  <a href="#configuration" style="font-size: 24px;">Configuration</a> |
   <a href="#run-botpy-botpy" style="font-size: 24px;">Run</a>
 </p>
 
