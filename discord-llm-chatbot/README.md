@@ -105,6 +105,7 @@ model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 
 2. Adjust remaining config settings as required
 
+```py
 BOT_PREFIX_ON = False
 BOT_PREFIX = '/b'
 BOT_CHANNEL_MESSAGE_ON = True
