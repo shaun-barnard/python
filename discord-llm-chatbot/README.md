@@ -1,7 +1,3 @@
-## Python Discord LLM (Large Language Model) Chatbot
-
-A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLM), and conversational memory to provide engaging responses.
-
 <p align="center">
   <a href="#installation" style="font-size: 24px;">Install</a> |
   <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
@@ -9,6 +5,10 @@ A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py)
   <a href="#configuration" style="font-size: 24px;">Configuration</a>
   <a href="#run-botpy-botpy" style="font-size: 24px;">Run</a>
 </p>
+
+## Python Discord LLM (Large Language Model) Chatbot
+
+A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLM), and conversational memory to provide engaging responses.
 
 ## Installation
 
