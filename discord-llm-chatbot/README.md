@@ -12,19 +12,19 @@ A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py)
 
 ## Installation
 
-#### 1. Create new folder for repo on your local machine
+#### 1. Create a new folder for this repository on your local machine
 ```bash
 mkdir <repo>
 cd <repo>
 ```
 
-#### 2. Create a treeless, shallow clone of the repo
+#### 2. Create a treeless, shallow clone of this repository
 ```bash
 git clone -n --depth=1 --filter=tree:0 https://github.com/shaunbarnard/python.git
 cd python
 ```
 
-#### 3. Enable the sparse-checkout feature and specify the folder you want to clone. In our case (discord-llm-chatbot):
+#### 3. Enable the sparse-checkout feature and specify the folder you want to clone (discord-llm-chatbot)
 ```bash
 git sparse-checkout set --no-cone discord-llm-chatbot
 ```
@@ -35,7 +35,7 @@ git checkout
 cd discord-llm-chatbot
 ```
 
-#### 5. Install necessary dependencies
+#### 5. Install the necessary Python dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -45,12 +45,12 @@ Skip if you've already have a model, otherwise head over to [HuggingFace.co](htt
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
 
-#### 1. Create new file
+#### 1. Create a new file
 ```bash
 sudo nano red.sh
 ```
 
-#### 2. Copy and paste following into newly created file:
+#### 2. Copy and paste the following into the newly created file:
 ```bash
 #!/bin/bash
 
@@ -63,12 +63,12 @@ done
 
 *Note: If you need to replace the URL, make sure to include the '?download=true' parameter.*
 
-#### 3. Set script file permission to executable
+#### 3. Set the download script file permissions to executable
 ```bash
 sudo chmod 775 red.sh
 ```
 
-#### 4. Run the script
+#### 4. Run the download script
 ```bash
 ./red.sh
 ```
@@ -96,7 +96,7 @@ sudo chmod 775 red.sh
 
 ## Configuration
 
-**1. Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.**
+**1. Set the model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.**
 
 ```py
 #Set model path
@@ -118,7 +118,7 @@ BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact w
 sudo nano .env
 ```
 
-**4. Paste in your API Token to newly created .env file**
+**4. Paste in your API Token to the newly created .env file**
 
 ```bash
 API_KEY=<your bot's discord token>
