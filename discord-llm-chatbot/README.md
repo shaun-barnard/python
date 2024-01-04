@@ -60,7 +60,7 @@ Note: The download script will contiunally retry and resume failed downloads, ev
 ## Create a Discord Application:
 
 ### Create a Discord Bot
-1. Log in to the Discord Developer Portal.
+1. Log in to the [Discord Developer Portal](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications).
 2. Click on the "New Application" button.
 3. Give your application a name and confirm the creation.
 
