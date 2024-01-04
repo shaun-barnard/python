@@ -103,7 +103,15 @@ Note: Above steps are a general overview of the process. For detailed instructio
 model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 ```
 
-2. Create .env file and set to your Discord Bot's API
+2. Adjust remaining config settings as required
+
+BOT_PREFIX_ON = False
+BOT_PREFIX = '/b'
+BOT_CHANNEL_MESSAGE_ON = True
+BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"
+```
+
+3. Create .env file and set to your Discord Bot's API
 
 ```bash
 sudo nano .env
