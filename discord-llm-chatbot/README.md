@@ -4,28 +4,34 @@ Basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) a
 
 ## Installation
 
-### 1. Create new folder for repo on your local machine
+#### 1. Create new folder for repo on your local machine
 ```bash
 mkdir <repo>
 cd <repo>
 ```
 
-### 2. Create a treeless, shallow clone of the repo
+#### 2. Create a treeless, shallow clone of the repo
 ```bash
 git clone -n --depth=1 --filter=tree:0 https://github.com/shaunbarnard/python.git
 cd python
 ```
 
-### 3. Enable the sparse-checkout feature and specify the folder you want to clone. In our case (discord-llm-chatbot):
+#### 3. Enable the sparse-checkout feature and specify the folder you want to clone. In our case (discord-llm-chatbot):
 ```bash
 git sparse-checkout set --no-cone discord-llm-chatbot
 ```
 
-### 4. Finally, check out the contents of the specified folder (llm-discord-chatbot)
+#### 4. Check out the contents of the specified folder (llm-discord-chatbot)
 ```bash
 git checkout
 cd discord-llm-chatbot
 ```
+
+#### 5. Install necessary dependencies
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Download LLM (Large Language Model)
 Skip this step if you already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
@@ -78,14 +84,14 @@ Note: Above steps are a general overview of the process. For detailed instructio
 
 ## Config
 
-Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
+1. Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
 
 ```py
 #Set model path
 model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 ```
 
-Create .env file and set to your Discord Bot's API
+2. Create .env file and set to your Discord Bot's API
 
 ```bash
 sudo nano .env
@@ -94,3 +100,6 @@ sudo nano .env
 ```bash
 API_KEY=<url discord token>
 ```
+
+
+
