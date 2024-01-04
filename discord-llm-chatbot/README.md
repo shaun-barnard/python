@@ -1,6 +1,6 @@
-## Python Discord LLM Chatbot
+## Python Discord LLM (Large Language Model) Chatbot
 
-Basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging language models (LLM), and conversational memory to provide engaging responses.
+Basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLM), and conversational memory to provide engaging responses.
 
 ## Installation
 
@@ -27,7 +27,7 @@ git checkout
 cd discord-llm-chatbot
 ```
 
-## Download LLM Model
+## Download LLM (Large Language Model)
 Skip this step if you already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
