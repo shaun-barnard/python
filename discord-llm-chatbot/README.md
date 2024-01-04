@@ -78,19 +78,19 @@ sudo chmod 775 red.sh
 ## Create a Discord Application:
 
 ### Create a Discord Bot
-1. Log in to the [Discord Developer Portal](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications).
-2. Click on the "New Application" button.
-3. Give your application a name and confirm the creation.
+1. Log in to the [Discord Developer Portal](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications)
+2. Click on the "New Application" button
+3. Give your application a name and confirm the creation
 
 ### Create a Bot Account
-1. Navigate to the "Bot" tab to configure the bot.
-2. Check the "Public Bot" option if you want others to invite your bot.
-3. Tick the "bot" checkbox under "scopes" and set the necessary permissions for your bot.
-4. Copy the bot's token to use it in your bot's code.
+1. Navigate to the "Bot" tab to configure the bot
+2. Check the "Public Bot" option if you want others to invite your bot
+3. Tick the "bot" checkbox under "scopes" and set the necessary permissions for your bot
+4. Copy the bot's token to use it in your bot's code
 
 ### Add the Bot to a Discord Server
-1. Use the bot's token to invite the bot to your Discord server.
-2. Set the appropriate permissions for your bot.
+1. Use the bot's token to invite the bot to your Discord server
+2. Set the appropriate permissions for your bot
 
 *Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)*
 
