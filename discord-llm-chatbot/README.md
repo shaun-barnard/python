@@ -30,12 +30,12 @@ cd discord-llm-chatbot
 ## Download LLM Model
 Head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
 
-###If you have shitty internet create the following script
+### If you have shitty internet create the following script
 ```bash
 nano red.sh
 '''
 
-###Copy and past the following
+### Copy and past the following
 
 ```bash
 #!/bin/bash
