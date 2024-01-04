@@ -15,37 +15,37 @@ A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py)
 > [!IMPORTANT]
 > Requires atleast Python 3.10 to work.
 
-## Create and activate virtual enviroment
+#### 1. Create and activate a virtual enviroment
 ```bash
 conda update conda
 conda create -n <env name> python=3.10
 conda activate <env name>
 ```
 
-#### 1. Create a new folder for this repository on your local machine
+#### 2. Create a new folder for this repository on your local machine
 ```bash
 mkdir <repo>
 cd <repo>
 ```
 
-#### 2. Create a treeless, shallow clone of this repository
+#### 3. Create a treeless, shallow clone of this repository
 ```bash
 git clone -n --depth=1 --filter=tree:0 https://github.com/shaunbarnard/python.git
 cd python
 ```
 
-#### 3. Enable the sparse-checkout feature and specify the folder you want to clone (discord-llm-chatbot)
+#### 4. Enable the sparse-checkout feature and specify the folder you want to clone (discord-llm-chatbot)
 ```bash
 git sparse-checkout set --no-cone discord-llm-chatbot
 ```
 
-#### 4. Check out the contents of the specified folder (llm-discord-chatbot)
+#### 5. Check out the contents of the specified folder (llm-discord-chatbot)
 ```bash
 git checkout
 cd discord-llm-chatbot
 ```
 
-#### 5. Install the necessary Python dependencies
+#### 6. Install the necessary Python dependencies
 ```bash
 pip install -r requirements.txt
 ```
