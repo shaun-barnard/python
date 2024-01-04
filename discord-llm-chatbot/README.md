@@ -32,7 +32,7 @@ Skip this step if you already have a model, otherwise head over to [HuggingFace.
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
 ```bash
-nano red.sh
+sudo nano red.sh
 ```
 
 ```bash
@@ -57,13 +57,40 @@ sudo chmod 775 red.sh
 
 Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
 
+## Create a Discord Application:
+
+### Create a Discord Bot
+1. Log in to the Discord Developer Portal.
+2. Click on the "New Application" button.
+3. Give your application a name and confirm the creation.
+
+### Create a Bot Account
+1. Navigate to the "Bot" tab to configure the bot.
+2. Check the "Public Bot" option if you want others to invite your bot.
+3. Tick the "bot" checkbox under "scopes" and set the necessary permissions for your bot.
+4. Copy the bot's token to use it in your bot's code.
+
+### Add the Bot to a Discord Server
+1. Use the bot's token to invite the bot to your Discord server.
+2. Set the appropriate permissions for your bot.
+
+Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)
+
 ## Config
 
 Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
 
 ```py
 #Set model path
-model_path = ("../models/mistral-7b-v0.1.Q4_K_M.gguf")
+model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 ```
 
-Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
+Create .env file and set to your Discord Bot's API
+
+```bash
+sudo nano .env
+```
+
+```bash
+API_KEY=<url discord token>
+```
