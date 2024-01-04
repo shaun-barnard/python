@@ -1,8 +1,12 @@
-<h3>
+<p align="center">
+  <a href="#bash" style="font-size: 24px;">Bash</a> |
+  <a href="#php" style="font-size: 24px;">PHP</a> |
+  <a href="#python" style="font-size: 24px;">Python</a>
+</p>
+
 [Bash](#bash)
 [PHP](#php)
 [Python](#python)
-</h3>
 
 #### Bash
 
