@@ -103,7 +103,7 @@ sudo chmod 775 red.sh
 model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 ```
 
-**2. Adjust the remaining configuration settings as necessary**
+**2. Adjust the remaining [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L18-L21) configuration settings as necessary**
 
 ```py
 BOT_PREFIX_ON = False
