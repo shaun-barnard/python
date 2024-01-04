@@ -56,3 +56,14 @@ sudo chmod 775 red.sh
 ```
 
 Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
+
+## Config
+
+Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
+
+```py
+#Set model path
+model_path = ("../models/mistral-7b-v0.1.Q4_K_M.gguf")
+```
+
+Set model path in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=1#L17) to your model's location.
