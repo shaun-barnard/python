@@ -2,7 +2,6 @@
 
 A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) and [LangChain](https://github.com/langchain-ai/langchain). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLM), and conversational memory to provide engaging responses.
 
-
 ## Installation
 
 #### 1. Create new folder for repo on your local machine
@@ -32,7 +31,6 @@ cd discord-llm-chatbot
 ```bash
 pip install -r requirements.txt
 ```
-
 
 ## Download LLM (Large Language Model)
 Skip if you've already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
@@ -69,7 +67,6 @@ sudo chmod 775 red.sh
 
 #### Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
 
-
 ## Create a Discord Application:
 
 ### Create a Discord Bot
@@ -88,7 +85,6 @@ sudo chmod 775 red.sh
 2. Set the appropriate permissions for your bot.
 
 Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)
-
 
 ## Config
 
