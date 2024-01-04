@@ -16,7 +16,7 @@ git clone -n --depth=1 --filter=tree:0 https://github.com/shaunbarnard/python.gi
 cd python
 ```
 
-### 3. Enable the sparse-checkout feature and specify the folder you want to clone. In this case (llm-discord-chatbot):
+### 3. Enable the sparse-checkout feature and specify the folder you want to clone. In our case (discord-llm-chatbot):
 ```bash
 git sparse-checkout set --no-cone discord-llm-chatbot
 ```
