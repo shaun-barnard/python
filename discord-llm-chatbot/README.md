@@ -112,7 +112,7 @@ BOT_CHANNEL_MESSAGE_ON = True
 BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"
 ```
 
-**3. Create .env file to your store Discord Bot's API Token**
+**3. Create an .env file to your store Discord Bot's API Token**
 
 ```bash
 sudo nano .env
