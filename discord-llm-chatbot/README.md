@@ -87,7 +87,7 @@ sudo chmod 775 red.sh
 
 #### 5. Rename the downloaded file
 ```bash
-sudo mv 'mistral-7b-v0.1.Q4_K_M.gguf?download=true' mistral-7b-v0.1.Q4_K_M.gguf
+sudo mv 'mistral-7b-v0.1.Q4_K_M.gguf?download=true' 'mistral-7b-v0.1.Q4_K_M.gguf'
 ```
 
 ## Create a Discord Application:
