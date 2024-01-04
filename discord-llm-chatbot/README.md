@@ -36,10 +36,13 @@ pip install -r requirements.txt
 Skip if you've already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
+
+#### 1. Create new file
 ```bash
 sudo nano red.sh
 ```
 
+#### 2. Copy and paste following into newly created file:
 ```bash
 #!/bin/bash
 
@@ -52,10 +55,12 @@ done
 
 #### Note: If you need to replace the URL, make sure to include the '?download=true' parameter. 
 
+#### 3. Set script file permission to executable
 ```bash
 sudo chmod 775 red.sh
 ```
 
+#### 4. Run the script
 ```bash
 ./red.sh
 ```
