@@ -15,6 +15,13 @@ A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py)
 > [!IMPORTANT]
 > Requires atleast Python 3.10 to work.
 
+## Create and activate virtual enviroment
+```bash
+conda update conda
+conda create -n <env name> python=3.10
+conda activate <env name>
+```
+
 #### 1. Create a new folder for this repository on your local machine
 ```bash
 mkdir <repo>
