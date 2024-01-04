@@ -105,5 +105,8 @@ sudo nano .env
 API_KEY=<url discord token>
 ```
 
+## Run bot.py [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py)
 
-
+```bash
+python bot.py
+```
