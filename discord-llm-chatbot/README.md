@@ -33,7 +33,7 @@ Head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-ge
 ### If you have shitty internet create the following script
 ```bash
 nano red.sh
-'''
+```
 
 ### Copy and past the following
 
@@ -45,14 +45,14 @@ do
     wget -c --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 -t 0 "https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/resolve/main/mistral-7b-v0.1.Q4_K_M.gguf?download=true"
     sleep 10s
 done
-'''
+```
 
-###Set permissions
+### Set permissions
 ```bash
 sudo chmod 775 red,sh
-'''
+```
 
-###Run script
+### Run script
 ```bash
 ./red.sh
-'''
+```
