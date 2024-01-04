@@ -1,8 +1,8 @@
-<div align="center">
-  <h3>
-   [Bash](https://github.com/shaunbarnard/python#bash) | [PHP](https://github.com/shaunbarnard/python#php) | [Python](https://github.com/shaunbarnard/python#python)
-  </h3>
-</div>
+<h3>
+[Bash](#bash)
+[PHP](#php)
+[Python](#python)
+</h3>
 
 #### Bash
 
