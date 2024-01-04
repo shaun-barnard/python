@@ -103,7 +103,7 @@ sudo chmod 775 red.sh
 model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 ```
 
-2. Adjust remaining config settings as required
+and adjust the remaining config settings as necessary
 
 ```py
 BOT_PREFIX_ON = False
