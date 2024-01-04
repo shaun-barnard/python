@@ -13,13 +13,15 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferWindowMemory
 
-#Set model path
-model_path = ("/mnt/ai/text-generation-webui/models/mistral-7b-finetuned-orca-dpo-v2.Q5_K_M.gguf")
-
+#Configuration
+MODEL_PATH = "../models/mistral-7b-v0.1.Q4_K_M.gguf"
 BOT_PREFIX_ON = False
 BOT_PREFIX = '/b'
 BOT_CHANNEL_MESSAGE_ON = True
 BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"
+
+#Set Model path
+model_path = (MODEL_PATH)
 
 #Set callback handler, stream only the final output of the agent.
 callbacks = [StreamingStdOutCallbackHandler()]
