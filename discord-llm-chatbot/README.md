@@ -28,14 +28,12 @@ cd discord-llm-chatbot
 ```
 
 ## Download LLM Model
-Skip this if you already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
+Skip this step if you already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
 ```bash
 nano red.sh
 ```
-
-#### Copy and paste the script below. 
 
 ```bash
 #!/bin/bash
@@ -47,16 +45,14 @@ do
 done
 ```
 
-Note: If you need to replace the URL, make sure to include the '?download=true' parameter.
+Note: If you need to replace the URL, make sure to include the '?download=true' parameter. 
 
-#### Set permissions
 ```bash
-sudo chmod 775 red,sh
+sudo chmod 775 red.sh
 ```
 
-#### Run script
 ```bash
 ./red.sh
 ```
 
-The download script will contiunally retry and resume failed downloads even if connection cuts out. Once it finishes downloading, you'll need to manually kill the script otherwise it'll flood your cli bitching about the download being complete.
+Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
