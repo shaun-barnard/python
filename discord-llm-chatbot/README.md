@@ -6,8 +6,9 @@ Basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py) a
 
 ### 1. Initialize a new Git repository on your local machine
 ```bash
-git init <repo>
+mkdir <repo>
 cd <repo>
+git init
 ```
 
 ### 2. Add this repository to the specific folder:
@@ -23,5 +24,5 @@ git sparse-checkout set llm-discord-chatbot
 
 ### 4. Finally, check out the contents of the specified folder (llm-discord-chatbot)
 ```bash
-git checkout @
+git checkout main
 ```
