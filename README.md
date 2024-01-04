@@ -1,7 +1,8 @@
-Programming Language:
-[Bash](#bash)
-[PHP](#php)
-[Python](#python)
+<div align="center">
+  <h3>
+   Programming Language: [Bash](#bash) | [PHP](#php) | [Python](#python)
+  </h3>
+</div>
 
 #### Bash
 
