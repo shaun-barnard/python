@@ -14,8 +14,8 @@ from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferWindowMemory
 
 #Configuration
-MODEL_PATH = "../models/mistral-7b-v0.1.Q4_K_M.gguf"
-BOT_PREFIX_ON = False
+MODEL_PATH = "mistral-7b-v0.1.Q4_K_M.gguf"
+BOT_PREFIX_ON = True
 BOT_PREFIX = '/b'
 BOT_CHANNEL_MESSAGE_ON = True
 BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"

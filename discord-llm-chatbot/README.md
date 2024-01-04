@@ -116,7 +116,7 @@ model_path = ("mistral-7b-v0.1.Q4_K_M.gguf")
 **2. Adjust the remaining configuration settings in [bot.py](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=#L18-L21) as necessary**
 
 ```py
-BOT_PREFIX_ON = False
+BOT_PREFIX_ON = True
 BOT_PREFIX = '/b'
 BOT_CHANNEL_MESSAGE_ON = True
 BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"
