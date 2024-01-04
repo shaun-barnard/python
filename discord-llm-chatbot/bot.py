@@ -1,8 +1,8 @@
 import asyncio
 import datetime
 import discord
-from dotenv import load_dotenv
 from discord.ext import commands
+from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.llms import GPT4All
