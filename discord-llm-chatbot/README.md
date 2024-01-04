@@ -61,7 +61,7 @@ do
 done
 ```
 
-#### Note: If you need to replace the URL, make sure to include the '?download=true' parameter. 
+*Note: If you need to replace the URL, make sure to include the '?download=true' parameter.*
 
 #### 3. Set script file permission to executable
 ```bash
@@ -73,7 +73,7 @@ sudo chmod 775 red.sh
 ./red.sh
 ```
 
-#### Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.
+*Note: The download script will contiunally retry and resume failed downloads, even if connection cuts out. Once download is complete, you'll need to manually kill the script.*
 
 ## Create a Discord Application:
 
@@ -92,7 +92,7 @@ sudo chmod 775 red.sh
 1. Use the bot's token to invite the bot to your Discord server.
 2. Set the appropriate permissions for your bot.
 
-Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)
+*Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)*
 
 ## 4. Configuration
 
