@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="#installation" style="font-size: 24px;">Install</a> |
-  <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
-  <a href="#create-a-discord-application" style="font-size: 24px;">Create Discord Application</a> |
-  <a href="#configuration" style="font-size: 24px;">Configuration</a> |
-  <a href="#run-the-bot" style="font-size: 24px;">Run</a>
+  1. <a href="#installation" style="font-size: 24px;">Install</a> |
+  2. <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
+  3. <a href="#create-a-discord-application" style="font-size: 24px;">Create Discord Application</a> |
+  4. <a href="#configuration" style="font-size: 24px;">Configuration</a> |
+  5. <a href="#run-the-bot" style="font-size: 24px;">Run</a>
 </p>
 
 ## Python Discord LLM (Large Language Model) Chatbot
