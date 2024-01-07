@@ -1,6 +1,6 @@
 Readme.md
 Overview
-This Python script is an example of a command-line tool that uses Scapy to craft and send custom packets with encryption and HMAC signature. It also includes a listening mode to monitor and decrypt incoming packets.
+This Python command-line tool that uses Scapy to craft and send custom packets with encryption and HMAC signature. It also includes a listening mode to monitor and decrypt incoming packets.
 Features
 Encryption: The script uses Blowfish encryption to secure the payload of the packets.
 HMAC Signature: The script generates an HMAC signature using SHA-256 to ensure the integrity of the packets.
@@ -41,7 +41,7 @@ After installing the required packages, you can run the script with the desired 
 
 ## Python Encrypted Message Exchanger
 
-A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py), [LangChain](https://github.com/langchain-ai/langchain), and [GPT4ALL](https://github.com/nomic-ai/gpt4all). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLMs), and conversational memory to provide engaging responses.
+A small command-line Encrypted Message Exchanger that can send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
 ## Installation
 
