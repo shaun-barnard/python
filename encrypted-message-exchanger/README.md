@@ -41,7 +41,7 @@ After installing the required packages, you can run the script with the desired 
 
 ## Python Encrypted Message Exchanger
 
-A small command-line Encrypted Message Exchanger that can send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
+A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
 ## Installation
 
