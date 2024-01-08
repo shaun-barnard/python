@@ -1,9 +1,9 @@
 <p align="center">
-    1. <a href="#features" style="font-size: 24px;">Features</a> |
-    2. <a href="#command-line-arguments" style="font-size: 24px;">Command-line Arguments</a> |
-    3. <a href="#install" style="font-size: 24px;">Install</a> |
-    4. <a href="#configuration" style="font-size: 24px;">Configure</a> |
-    5. <a href="#run" style="font-size: 24px;">Run</a>
+    <a href="#features" style="font-size: 24px;">Features</a> |
+    <a href="#command-line-arguments" style="font-size: 24px;">Command-line Arguments</a> |
+    <a href="#install" style="font-size: 24px;">Install</a> |
+    <a href="#configuration" style="font-size: 24px;">Configure</a> |
+    <a href="#run" style="font-size: 24px;">Run</a>
 </p>
 
 ## Python Encrypted Message Exchanger
