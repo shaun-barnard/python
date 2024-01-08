@@ -3,7 +3,7 @@
     2. <a href="#command-line-arguments" style="font-size: 24px;">Command-line Arguments</a> |
     3. <a href="#install" style="font-size: 24px;">Install</a> |
     4. <a href="#configure" style="font-size: 24px;">Configure</a> |
-    7. <a href="#run" style="font-size: 24px;">Run</a>
+    5. <a href="#run" style="font-size: 24px;">Run</a>
 </p>
 
 ## Python Encrypted Message Exchanger
