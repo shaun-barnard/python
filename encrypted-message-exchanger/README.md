@@ -10,11 +10,15 @@
 
 A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks, using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
+---
+
 ## Features
 
 **Blowfish Encryption**: The command-line tool uses Blowfish encryption to secure the payload of the packets.<br>
 **HMAC Signature**: Ensure packet intergrity with HMAC signatures using SHA-256.<br>
 **Custom Packets**: Crafts custom Ethernet, IP, and TCP packets with the specified parameters.<br>
+
+---
 
 ## Command-line Arguments
 
@@ -61,6 +65,8 @@ options:
                         packet send.
 ```
 
+---
+
 ## Install
 
 > [!IMPORTANT]
@@ -101,6 +107,8 @@ cd encrypted-message-exchanger
 pip install -r requirements.txt
 ``` 
 
+---
+
 ## Configuration
 
 **1. Adjust the settings in [.env](https://github.com/shaunbarnard/python/blob/main/encrypted-message-exchanger/.env?plain=#L1-L19) as necessary**
@@ -127,7 +135,9 @@ SRC_PORT=80
 DST_PORT=80
 ```
 
-## Run the exchanger
+---
+
+## Run
 
 ```bash
 python eme.py
