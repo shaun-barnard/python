@@ -209,7 +209,7 @@ def parsePacket(packet, key):
 ##### MAIN ################################
 ###########################################
 
-def sendPacket():
+def sendPacket(i):
     #Setup timestamp
     local_time = time.localtime(time.time())
     timestamp = time.strftime('%A, %d/%m/%y @ %I:%M:%S %p', local_time)
@@ -222,22 +222,35 @@ def sendPacket():
 
     #Send the packet
     if I_FACE == "":
-        sendp(custom_packet)
+        sendp(custom_packet, verbose=False)
+        print(f"[+] Packet [{i}] sent [{timestamp}]")
     else:
-        sendp(custom_packet, I_FACE)
+        sendp(custom_packet, I_FACE, verbose=False)
+        print(f"[+] Packet [{i}] sent. [{timestamp}]")
 
     #Wait 10 seconds
-    if SEND_COUNT > 1:
+    if SEND_COUNT > 1 and i < SEND_COUNT:
         time.sleep(SEND_TIMEOUT)
 
 def main() -> None:
+
+    i = 1
+
+    if SEND_COUNT == 0:
+        print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{SRC_PORT}] to [{IP_DST}:{DST_PORT}] every [{SEND_TIMEOUT}] seconds...")
+    else:
+         print(f"[+] Sending [{SEND_COUNT}] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{SRC_PORT}] to [{IP_DST}:{DST_PORT}] every [{SEND_TIMEOUT}] seconds...")
     
     if LISTEN is not True:
         if SEND_COUNT == 0:
             while True:
-                sendPacket()
-        else:
+                sendPacket(i)
+        elif SEND_COUNT == 1:
             sendPacket()
+        else:
+            while i <= SEND_COUNT:
+                sendPacket(i)
+                i+=1
     else:
         listen()
 
