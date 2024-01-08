@@ -42,7 +42,7 @@ options:
                         Specify the network interface.
   -ip IP_DST, --ip_dst IP_DST
                         Specify the destination IP address.
-  -is IP_SRC, --ip_src IP_SRC
+  -ips IP_SRC, --ip_src IP_SRC
                         Specify the source IP address.
   -k KEY, --key KEY     Specify the encryption key.
   -l, --listen          Specify the mode (listen or send).
@@ -157,6 +157,18 @@ Send a custom encrypted message with a custom key
 
 ```bash
 sudo python eme.py -m "Secret Message" -k "Password I shared with recipient"
+```
+
+Send a custom UDP packet containing an encrypted message with a custom key
+
+```bash
+sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P udp
+```
+
+Send a spoofed UDP packet containing an encrypted message with a custom key
+
+```bash
+sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P udp -ips 69.69.69.69
 ```
 
 Send 10 encrypted packets

@@ -53,7 +53,7 @@ parser.add_argument("-f", "--filter",  choices=["arp", "icmp", "igmp", "ip", "ud
 parser.add_argument("-fd", "--frame_dst", help="Specify the destination MAC address.", default=FRAME_DST)
 parser.add_argument("-fs", "--frame_src", help="Specify the source MAC address.", default=FRAME_SRC)
 parser.add_argument("-i", "--iface", help="Specify the network interface.", default=I_FACE)
-parser.add_argument("-ip", "--ip_dst", help="Specify the destination IP address.", default=IP_DST)
+parser.add_argument("-ips", "--ip_dst", help="Specify the destination IP address.", default=IP_DST)
 parser.add_argument("-is", "--ip_src", help="Specify the source IP address.", default=IP_SRC)
 parser.add_argument("-k", "--key", help="Specify the encryption key.", default=KEY)
 parser.add_argument("-l", "--listen", help="Specify the mode (listen or send).", action='store_true', default=False)
