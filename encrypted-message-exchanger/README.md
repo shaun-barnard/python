@@ -50,12 +50,12 @@ options:
                         Specify the mode (listen or send).
   -m MESSAGE, --message MESSAGE
                         Specify the secret message.
-  -p DST_PORT, --dst_port DST_PORT
+  -p PORT_DST, --port_dst PORT_DST
                         Specify the destination port.
+  -ps PORT_SRC, --port_src PORT_SRC
+                        Specify the source port.
   -P PROTOCOL, --protocol PROTOCOL
                         Specify the protocol (TCP or UDP).
-  -S SRC_PORT, --src_port SRC_PORT
-                        Specify the source port.
   -t SEND_TIMEOUT, --send_timeout SEND_TIMEOUT
                         Specify the number of seconds to wait before each
                         packet send.
