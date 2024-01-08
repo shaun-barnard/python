@@ -152,4 +152,3 @@ Send 1 encrypted packet using all the default settings:
 ```bash
 sudo python eme.py
 ```
-
