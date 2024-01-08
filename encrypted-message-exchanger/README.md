@@ -141,8 +141,14 @@ Listen for encrypted packets using the default settings:
 sudo python eme.py -l
 ```
 
-Send 1 encrypted packet using the default settings:
+Send a signle encrypted packet using the default settings:
 
 ```bash
 sudo python eme.py
+```
+
+Send 10 encrypted packets using the default settings:
+
+```bash
+sudo python eme.py -c 10
 ```
