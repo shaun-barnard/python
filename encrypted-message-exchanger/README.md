@@ -13,7 +13,7 @@ A small command-line Encrypted Message Exchanger that allows the user to craft, 
 ## Features
 
 Blowfish Encryption: The command-line tool uses Blowfish encryption to secure the payload of the packets.
-HMAC Signature: Ensures the integrity of the packets by implementing HMAC signatures using SHA-256.
+HMAC Signature: Ensure packet intergrity with HMAC signatures using SHA-256.
 Custom Packets: Crafts custom Ethernet, IP, and TCP packets with the specified parameters.
 
 ## Command-line Arguments
