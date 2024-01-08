@@ -20,21 +20,21 @@ Custom Packets: Crafts custom Ethernet, IP, and TCP packets with the specified p
 
 This tool provides various command-line arguments to configure the frame/packet parameters and mode of operation.
 
-#### -c, --send_count: Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1
-#### -f, --filter: Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False
-#### -fd, --frame_dst: Specify the destination MAC address. Default: None
-#### -fs, --frame_src: Specify the source MAC address. Default: None
-#### -i, --iface: Specify the network interface. Default: None
-#### -ip, --ip_dst: Specify the destination IP address. Default: None
-#### -is, --ip_src: Specify the source IP address. Default: None
-#### -k, --key: Specify the encryption key. Default: None
-#### -l, --listen: Specify the mode (listen or send). Default: False
-#### -lp, --listen_port: Specify the mode (listen or send). Default: 80
-#### -m, --message: Specify the secret message. Default: None
-#### -p, --dst_port: Specify the destination port. Default: None
-#### -P, --protocol: Specify the protocol (TCP or UDP). Default: None
-#### -S, --src_port: Specify the source port. Default: None
-#### -t, --send_timeout: Specify the number of seconds to wait before each packet send. Default: 10
+-c, --send_count: Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1
+-f, --filter: Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False
+-fd, --frame_dst: Specify the destination MAC address. Default: None
+-fs, --frame_src: Specify the source MAC address. Default: None
+-i, --iface: Specify the network interface. Default: None
+-ip, --ip_dst: Specify the destination IP address. Default: None
+-is, --ip_src: Specify the source IP address. Default: None
+-k, --key: Specify the encryption key. Default: None
+-l, --listen: Specify the mode (listen or send). Default: False
+-lp, --listen_port: Specify the mode (listen or send). Default: 80
+-m, --message: Specify the secret message. Default: None
+-p, --dst_port: Specify the destination port. Default: None
+-P, --protocol: Specify the protocol (TCP or UDP). Default: None
+-S, --src_port: Specify the source port. Default: None
+-t, --send_timeout: Specify the number of seconds to wait before each packet send. Default: 10
 
 ## Install
 
