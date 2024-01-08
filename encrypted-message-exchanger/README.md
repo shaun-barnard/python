@@ -133,7 +133,7 @@ DST_PORT=80
 sudo python eme.py
 ```
 
-#### Examples
+#### Usage Examples
 
 Listen for encrypted packets using the default settings:
 
@@ -141,10 +141,28 @@ Listen for encrypted packets using the default settings:
 sudo python eme.py -l
 ```
 
-Send a signle encrypted packet using the default settings:
+Send a single encrypted packet using the default settings:
 
 ```bash
 sudo python eme.py
+```
+
+Listen for encrypted packets using the default settings:
+
+```bash
+sudo python eme.py -l
+```
+
+Listen for encrypted messages containing a custom key
+
+```bash
+sudo python eme.py -l -k "Password I shared with recipient"
+```
+
+Send a custom encrypted message with a custom key
+
+```bash
+sudo python eme.py -m "Secret Message" -k "Password I shared with recipient"
 ```
 
 Send 10 encrypted packets
@@ -163,4 +181,10 @@ Send an unlimited number of packets
 
 ```bash
 sudo python eme.py -c 0
+```
+
+Send a flood of an unlimited number of packets
+
+```bash
+sudo python eme.py -c 0 -t 0
 ```
