@@ -111,7 +111,7 @@ pip install -r requirements.txt
 ####################
 # SECRETS
 ####################
-PRIVATE_KEY="Password I shared with recipient   "
+PRIVATE_KEY="Password I shared with recipient"
 SECRET_MESSAGE="This is a secret message\n\nFROM: Neo"
 ####################
 # DEFAULT SETTINGS
