@@ -60,7 +60,7 @@ parser.add_argument("-l", "--listen", help="Specify the mode (listen or send).",
 parser.add_argument("-lp", "--listen-port", help="Specify the mode (listen or send).", default=LISTEN_PORT)
 parser.add_argument("-m", "--message", help="Specify the secret message.", default=MESSAGE)
 parser.add_argument("-p", "--dst_port", help="Specify the destination port.", default=DST_PORT)
-parser.add_argument("-P", "--protocol", help="Specify the protocol (TCP, UDP, etc.).", default=PROTOCOL)
+parser.add_argument("-P", "--protocol", help="Specify the protocol (TCP or UDP).", default=PROTOCOL)
 parser.add_argument("-S", "--src_port", help="Specify the source port.", default=SRC_PORT)
 parser.add_argument("-t", "--send_timeout", help="Specify the number of seconds to wait before each packet send.", default=SEND_TIMEOUT)
 
@@ -167,10 +167,10 @@ def listen(iface = False):
             sniff(filter="ip", prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
     else:
         if iface is True:
-            print(f"[+] Listening for Encrypted [{FILTER}] frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
+            print(f"[+] Listening for Encrypted [{FILTER.upper()}] frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
             sniff(iface=iface, filter=FILTER, prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
         else:
-            print(f"[+] Listening for Encrypted [{FILTER}] frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
+            print(f"[+] Listening for Encrypted [{FILTER.upper()}] frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
             sniff(filter=FILTER, prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
 
     if iface is True:
@@ -217,8 +217,13 @@ def sendPacket(i):
     #Encrypt payload
     payload = encryptPayload(KEY, MESSAGE + b'\n\n[' + timestamp.encode() + b']')
 
+    protocol_dict = {
+        "UDP": UDP(sport=SRC_PORT, dport=DST_PORT),
+        "TCP": TCP(sport=SRC_PORT, dport=DST_PORT)
+    }
+
     #Craft a custom Ethernet, IP, and TCP packet
-    custom_packet = Ether(src=FRAME_SRC, dst=FRAME_DST) / IP(src=IP_SRC, dst=IP_DST) / TCP(sport=SRC_PORT, dport=DST_PORT) / payload
+    custom_packet = Ether(src=FRAME_SRC, dst=FRAME_DST) / IP(src=IP_SRC, dst=IP_DST) / protocol_dict[PROTOCOL.upper()] / payload
 
     #Send the packet
     if I_FACE == "":
