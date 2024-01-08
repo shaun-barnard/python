@@ -147,8 +147,20 @@ Send a signle encrypted packet using the default settings:
 sudo python eme.py
 ```
 
-Send 10 encrypted packets using the default settings:
+Send 10 encrypted packets
 
 ```bash
 sudo python eme.py -c 10
+```
+
+Send a total of 10 encrypted packets with 5 second intervals between each send
+
+```bash
+sudo python eme.py -c 10 -t 5
+```
+
+Send an unlimited number of packets
+
+```bash
+sudo python eme.py -c 0
 ```

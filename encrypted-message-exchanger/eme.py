@@ -229,6 +229,8 @@ def sendPacket(i):
         print(f"[+] Packet [{i}] sent. [{timestamp}]")
 
     #Wait 10 seconds
+    if SEND_COUNT == 0:
+        time.sleep(SEND_TIMEOUT)
     if SEND_COUNT > 1 and i < SEND_COUNT:
         time.sleep(SEND_TIMEOUT)
 
