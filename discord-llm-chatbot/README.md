@@ -127,7 +127,7 @@ BOT_CHANNEL_MESSAGE_ON = True
 BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact with me ;)"
 ```
 
-**3. Paste your API Token into [.env](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/bot.py?plain=#L1) file**
+**3. Paste your API Token into [.env](https://github.com/shaunbarnard/python/blob/main/discord-llm-chatbot/.env?plain=#L1) file**
 
 ```bash
 API_KEY=<your bot's discord token>
