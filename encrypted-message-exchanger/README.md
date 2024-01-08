@@ -20,6 +20,7 @@ Custom Packets: Crafts custom Ethernet, IP, and TCP packets with the specified p
 
 This tool provides various command-line arguments to configure the frame/packet parameters and mode of operation.
 
+'''text
 usage: eme.py [-h] [-c SEND_COUNT] [-f {arp,icmp,igmp,ip,udp,tcp}]
               [-fd FRAME_DST] [-fs FRAME_SRC] [-i IFACE] [-ip IP_DST]
               [-is IP_SRC] [-k KEY] [-l] [-lp LISTEN_PORT] [-m MESSAGE]
@@ -58,6 +59,7 @@ options:
   -t SEND_TIMEOUT, --send_timeout SEND_TIMEOUT
                         Specify the number of seconds to wait before each
                         packet send.
+'''
 
 ## Install
 
