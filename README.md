@@ -1,4 +1,4 @@
-[![Discord](https://img.shields.io/discord/1193946747878260767?color=green&label=Discord&logo=discord&logoColor=white)](https://discord.gg/KmAkuNyr)
+[![Discord](https://img.shields.io/discord/1193946747878260767?color=blue&label=Discord&logo=discord&logoColor=white)](https://discord.gg/KmAkuNyr)
 
 #### Python
 ### [Discord LLM (Large Language Model) Chatbot](https://github.com/shaunbarnard/python/tree/main/discord-llm-chatbot)<br>
