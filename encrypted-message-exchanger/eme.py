@@ -209,30 +209,35 @@ def parsePacket(packet, key):
 ##### MAIN ################################
 ###########################################
 
+def sendPacket():
+    #Setup timestamp
+    local_time = time.localtime(time.time())
+    timestamp = time.strftime('%A, %d/%m/%y @ %I:%M:%S %p', local_time)
+
+    #Encrypt payload
+    payload = encryptPayload(KEY, MESSAGE + b'\n\n[' + timestamp.encode() + b']')
+
+    #Craft a custom Ethernet, IP, and TCP packet
+    custom_packet = Ether(src=FRAME_SRC, dst=FRAME_DST) / IP(src=IP_SRC, dst=IP_DST) / TCP(sport=SRC_PORT, dport=DST_PORT) / payload
+
+    #Send the packet
+    if I_FACE == "":
+        sendp(custom_packet)
+    else:
+        sendp(custom_packet, I_FACE)
+
+    #Wait 10 seconds
+    if SEND_COUNT > 1:
+        time.sleep(SEND_TIMEOUT)
+
 def main() -> None:
     
     if LISTEN is not True:
         if SEND_COUNT == 0:
             while True:
-
-                #Setup timestamp
-                local_time = time.localtime(time.time())
-                timestamp = time.strftime('%A, %d/%m/%y @ %I:%M:%S %p', local_time)
-
-                #Encrypt payload
-                payload = encryptPayload(KEY, MESSAGE + b'\n\n[' + timestamp.encode() + b']')
-
-                #Craft a custom Ethernet, IP, and TCP packet
-                custom_packet = Ether(src=FRAME_SRC, dst=FRAME_DST) / IP(src=IP_SRC, dst=IP_DST) / TCP(sport=SRC_PORT, dport=DST_PORT) / payload
-
-                #Send the packet
-                if I_FACE == "":
-                    sendp(custom_packet)
-                else:
-                    sendp(custom_packet, I_FACE)
-
-                #Wait 10 seconds
-                time.sleep(SEND_TIMEOUT)
+                sendPacket()
+        else:
+            sendPacket()
 
     else:
         listen()

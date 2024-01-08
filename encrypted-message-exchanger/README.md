@@ -132,3 +132,11 @@ DST_PORT=80
 ```bash
 sudo python eme.py
 ```
+
+#### Examples
+
+To monitor using all default settings
+
+```bash
+sudo python eme.py -l
+```
