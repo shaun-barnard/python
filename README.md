@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/YourDiscordServerID?color=blue&label=Discord&logo=discord&logoColor=white)](https://discord.gg/KmAkuNyr)
+
 #### Python
 ### [Discord LLM (Large Language Model) Chatbot](https://github.com/shaunbarnard/python/tree/main/discord-llm-chatbot)<br>
 A basic Discord chatbot using [Discord.py](https://github.com/Rapptz/discord.py), [LangChain](https://github.com/langchain-ai/langchain), and [GPT4ALL](https://github.com/nomic-ai/gpt4all). The bot is designed to interact with Discord channel users in a conversational manner, leveraging large language models (LLMs), and conversational memory to provide engaging responses.
