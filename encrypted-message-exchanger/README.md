@@ -20,21 +20,21 @@ Custom Packets: Crafts custom Ethernet, IP, and TCP packets with the specified p
 
 This tool provides various command-line arguments to configure the frame/packet parameters and mode of operation.
 
-**-c** <ins>--send_count</ins>: Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1<br>
-**-f** <ins>--filter</ins>: Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False<br>
-**-fd** <ins>--frame_dst</ins>: Specify the destination MAC address. Default: None<br>
-**-fs** <ins>--frame_src</ins>: Specify the source MAC address. Default: None<br>
-**-i** <ins>--iface</ins>: Specify the network interface. Default: None<br>
-**-ip** <ins>--ip_dst</ins>: Specify the destination IP address. Default: None<br>
-**-is** <ins>--ip_src</ins>: Specify the source IP address. Default: None<br>
-**-k** <ins>--key</ins>: Specify the encryption key. Default: None<br>
-**-l** <ins>--listen</ins>: Specify the mode (listen or send). Default: False<br>
-**-lp** <ins>--listen_port</ins>: Specify the mode (listen or send). Default: 80<br>
-**-m** <ins>--message</ins>: Specify the secret message. Default: None<br>
-**-p** <ins>--dst_port</ins>: Specify the destination port. Default: None<br>
-**-P** <ins>--protocol</ins>: Specify the protocol (TCP or UDP). Default: None<br>
-**-S** <ins>--src_port</ins>: Specify the source port. Default: None<br>
-**-t** <ins>--send_timeout</ins>: Specify the number of seconds to wait before each packet send. Default: 10<br>
+**-c** --send_count: *Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1*<br>
+**-f** --filter: *Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False*<br>
+**-fd** --frame_dst: *Specify the destination MAC address. Default: None*<br>
+**-fs** --frame_src: *Specify the source MAC address. Default: None*<br>
+**-i** --iface: *Specify the network interface. Default: None*<br>
+**-ip** --ip_dst: *Specify the destination IP address. Default: None*<br>
+**-is** --ip_src: *Specify the source IP address. Default: None*<br>
+**-k** --key<: *Specify the encryption key. Default: None*<br>
+**-l** --listen: *Specify the mode (listen or send). Default: False*<br>
+**-lp** --listen_port: *Specify the mode (listen or send). Default: 80*<br>
+**-m** --message: *Specify the secret message. Default: None*<br>
+**-p** --dst_port: *Specify the destination port. Default: None*<br>
+**-P** --protocol: *Specify the protocol (TCP or UDP). Default: None*<br>
+**-S** --src_port: *Specify the source port. Default: None*<br>
+**-t** --send_timeout: *Specify the number of seconds to wait before each packet send. Default: 10*<br>
 
 ## Install
 
