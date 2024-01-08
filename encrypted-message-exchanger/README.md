@@ -20,36 +20,44 @@ Custom Packets: Crafts custom Ethernet, IP, and TCP packets with the specified p
 
 This tool provides various command-line arguments to configure the frame/packet parameters and mode of operation.
 
-**-c** --send_count<br>
-&emsp;Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1<br>
-**-f** --filter<br>
-&emsp;Packet filter ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False<br>
-**-fd** --frame_dst<br>
-&emsp;Specify the destination MAC address. Default: None<br>
-**-fs** --frame_src<br>
-&emsp;Specify the source MAC address. Default: None<br>
-**-i** --iface<br>
-&emsp;Specify the network interface. Default: None<br>
-**-ip** --ip_dst<br>
-&emsp;Specify the destination IP address. Default: None<br>
-**-is** --ip_src<br>
-&emsp;Specify the source IP address. Default: None<br>
-**-k** --key<br>
-&emsp;Specify the encryption key. Default: None<br>
-**-l** --listen<br>
-&emsp;Specify the mode (listen or send). Default: False<br>
-**-lp** --listen_port<br>
-&emsp;Specify the mode (listen or send). Default: 80<br>
-**-m** --message<br>
-&emsp;Specify the secret message. Default: None<br>
-**-p** --dst_port<br>
-&emsp;Specify the destination port. Default: None<br>
-**-P** --protocol<br>
-&emsp;Specify the protocol (TCP or UDP). Default: None<br>
-**-S** --src_port<br>
-&emsp;Specify the source port. Default: None<br>
-**-t** --send_timeout<br>
-&emsp;Specify the number of seconds to wait before each packet send. Default: 10<br>
+usage: eme.py [-h] [-c SEND_COUNT] [-f {arp,icmp,igmp,ip,udp,tcp}]
+              [-fd FRAME_DST] [-fs FRAME_SRC] [-i IFACE] [-ip IP_DST]
+              [-is IP_SRC] [-k KEY] [-l] [-lp LISTEN_PORT] [-m MESSAGE]
+              [-p DST_PORT] [-P PROTOCOL] [-S SRC_PORT] [-t SEND_TIMEOUT]
+
+options:
+  -h, --help            show this help message and exit
+  -c SEND_COUNT, --send_count SEND_COUNT
+                        Specify the number of packets to send. Set 0 to send
+                        an unlimited number of packets.
+  -f {arp,icmp,igmp,ip,udp,tcp}, --filter {arp,icmp,igmp,ip,udp,tcp}
+                        Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT,
+                        AND, OR
+  -fd FRAME_DST, --frame_dst FRAME_DST
+                        Specify the destination MAC address.
+  -fs FRAME_SRC, --frame_src FRAME_SRC
+                        Specify the source MAC address.
+  -i IFACE, --iface IFACE
+                        Specify the network interface.
+  -ip IP_DST, --ip_dst IP_DST
+                        Specify the destination IP address.
+  -is IP_SRC, --ip_src IP_SRC
+                        Specify the source IP address.
+  -k KEY, --key KEY     Specify the encryption key.
+  -l, --listen          Specify the mode (listen or send).
+  -lp LISTEN_PORT, --listen-port LISTEN_PORT
+                        Specify the mode (listen or send).
+  -m MESSAGE, --message MESSAGE
+                        Specify the secret message.
+  -p DST_PORT, --dst_port DST_PORT
+                        Specify the destination port.
+  -P PROTOCOL, --protocol PROTOCOL
+                        Specify the protocol (TCP or UDP).
+  -S SRC_PORT, --src_port SRC_PORT
+                        Specify the source port.
+  -t SEND_TIMEOUT, --send_timeout SEND_TIMEOUT
+                        Specify the number of seconds to wait before each
+                        packet send.
 
 ## Install
 

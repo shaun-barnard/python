@@ -47,7 +47,7 @@ LISTEN_PORT = 80
 ##### COMMAND LINE PARSING ################
 ###########################################
 
-parser = argparse.ArgumentParser(description="Example script with command-line arguments.")
+parser = argparse.ArgumentParser(description="A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks.")
 parser.add_argument("-c", "--send_count", help="Specify the number of packets to send. Set 0 to send an unlimited number of packets.", default=SEND_COUNT)
 parser.add_argument("-f", "--filter",  choices=["arp", "icmp", "igmp", "ip", "udp", "tcp"], help="Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR", default=FILTER)
 parser.add_argument("-fd", "--frame_dst", help="Specify the destination MAC address.", default=FRAME_DST)
