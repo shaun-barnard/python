@@ -27,8 +27,8 @@ This tool provides various command-line arguments to configure the frame/packet 
 **-i** <ins>--iface</ins>: Specify the network interface. Default: None<br>
 **-ip** <ins>--ip_dst</ins>: Specify the destination IP address. Default: None<br>
 **-is** <ins>--ip_src</ins>: Specify the source IP address. Default: None<br>
-**-k** <ins>--key:</ins>: Specify the encryption key. Default: None<br>
-**-l** <ins>--listen:</ins>: Specify the mode (listen or send). Default: False<br>
+**-k** <ins>--key</ins>: Specify the encryption key. Default: None<br>
+**-l** <ins>--listen</ins>: Specify the mode (listen or send). Default: False<br>
 **-lp** <ins>--listen_port</ins>: Specify the mode (listen or send). Default: 80<br>
 **-m** <ins>--message</ins>: Specify the secret message. Default: None<br>
 **-p** <ins>--dst_port</ins>: Specify the destination port. Default: None<br>
