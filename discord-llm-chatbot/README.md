@@ -10,6 +10,8 @@
 
 Send and recieve (Blowfish) encrypted frames/packets across networks using this small Encrypted Message Exchanger, which implements [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
+---
+
 ## Installation
 
 > [!IMPORTANT]
@@ -49,6 +51,8 @@ cd discord-llm-chatbot
 ```bash
 pip install -r requirements.txt
 ``` 
+
+---
 
 ## Download LLM (Large Language Model)
 Skip if you've already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
@@ -90,6 +94,8 @@ sudo chmod 775 red.sh
 sudo mv 'mistral-7b-v0.1.Q4_K_M.gguf?download=true' 'mistral-7b-v0.1.Q4_K_M.gguf'
 ```
 
+---
+
 ## Create a Discord Application:
 
 ### Create a Discord Bot
@@ -108,6 +114,8 @@ sudo mv 'mistral-7b-v0.1.Q4_K_M.gguf?download=true' 'mistral-7b-v0.1.Q4_K_M.gguf
 2. Set the appropriate permissions for your bot
 
 *Note: Above steps are a general overview of the process. For detailed instructions and best practices, you can refer to the [Offical Discord Documentation](https://discord.com/developers/docs/intro)*
+
+---
 
 ## Configuration
 
@@ -132,6 +140,8 @@ BOT_CHANNEL_MESSAGE = "Hey guys! Use '/b' followed by your message to interact w
 ```bash
 API_KEY=<your bot's discord token>
 ```
+
+---
 
 ## Run the bot
 
