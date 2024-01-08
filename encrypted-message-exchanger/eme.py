@@ -248,7 +248,7 @@ def main() -> None:
             while True:
                 sendPacket(i)
         elif SEND_COUNT == 1:
-            sendPacket()
+            sendPacket(i)
         else:
             while i <= SEND_COUNT:
                 sendPacket(i)
