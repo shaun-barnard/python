@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/1193946747878260767?color=blue&label=Discord&logo=discord&logoColor=white)](https://discord.gg/KmAkuNyr)
+
 <p align="center">
   <a href="#installation" style="font-size: 24px;">Install</a> |
   <a href="#download-llm-large-language-model" style="font-size: 24px;">Download LLM</a> |
