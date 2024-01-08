@@ -69,13 +69,13 @@ args = parser.parse_args()
 KEY = args.key.encode()
 MESSAGE = args.message.encode()
 I_FACE = args.iface
-FRAME_SRC = args.frame_src
 FRAME_DST = args.frame_dst
-IP_SRC = args.ip_src
+FRAME_SRC = args.frame_src
 IP_DST = args.ip_dst
+IP_SRC = args.ip_src
 PROTOCOL = args.protocol
-PORT_SRC = int(args.port_src)
 PORT_DST = int(args.port_dst)
+PORT_SRC = int(args.port_src)
 
 SEND_COUNT = int(args.send_count)
 SEND_TIMEOUT = int(args.send_timeout)
