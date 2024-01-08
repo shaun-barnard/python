@@ -44,8 +44,10 @@ options:
                         Specify the destination IP address.
   -ips IP_SRC, --ip_src IP_SRC
                         Specify the source IP address.
-  -k KEY, --key KEY     Specify the encryption key.
-  -l, --listen          Specify the mode (listen or send).
+  -k KEY, --key KEY     
+                        Specify the encryption key.
+  -l, --listen          
+                        Specify the mode (listen or send).
   -lp LISTEN_PORT, --listen-port LISTEN_PORT
                         Specify the mode (listen or send).
   -m MESSAGE, --message MESSAGE
