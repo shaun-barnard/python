@@ -60,7 +60,7 @@ parser.add_argument("-l", "--listen", help="Specify the mode (listen or send).",
 parser.add_argument("-lp", "--listen-port", help="Specify the mode (listen or send).", default=LISTEN_PORT)
 parser.add_argument("-m", "--message", help="Specify the secret message.", default=MESSAGE)
 parser.add_argument("-p", "--dst_port", help="Specify the destination port.", default=DST_PORT)
-parser.add_argument("-P", "--protocol", help="Specify the protocol (TCP or UDP).", default=PROTOCOL)
+parser.add_argument("-P", "--protocol", help="Specify the protocol (TCP, UDP, etc.).", default=PROTOCOL)
 parser.add_argument("-S", "--src_port", help="Specify the source port.", default=SRC_PORT)
 parser.add_argument("-t", "--send_timeout", help="Specify the number of seconds to wait before each packet send.", default=SEND_TIMEOUT)
 

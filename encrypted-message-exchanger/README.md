@@ -147,12 +147,6 @@ Send a single encrypted packet using the default settings:
 sudo python eme.py
 ```
 
-Listen for encrypted packets using the default settings:
-
-```bash
-sudo python eme.py -l
-```
-
 Listen for encrypted messages containing a custom key
 
 ```bash
