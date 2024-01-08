@@ -170,7 +170,7 @@ sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P 
 Send a custom UDP packet containing an encrypted message, a custom key, and a spoofed IP source address
 
 ```bash
-sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P udp -ips 69.69.69.69
+sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P udp -ips 33.33.33.33
 ```
 
 Send 10 encrypted packets
