@@ -149,7 +149,7 @@ Send a single encrypted packet using the default settings:
 sudo python eme.py
 ```
 
-Listen for encrypted messages containing a custom key
+Listen for encrypted messages containing the specified custom key
 
 ```bash
 sudo python eme.py -l -k "Password I shared with recipient"
@@ -161,13 +161,13 @@ Send a custom encrypted message with a custom key
 sudo python eme.py -m "Secret Message" -k "Password I shared with recipient"
 ```
 
-Send a custom UDP packet containing an encrypted message with a custom key
+Send a custom UDP packet containing an encrypted message and a custom key
 
 ```bash
 sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P udp
 ```
 
-Send a spoofed UDP packet containing an encrypted message with a custom key
+Send a custom UDP packet containing an encrypted message, a custom key, and a spoofed IP source address
 
 ```bash
 sudo python eme.py -m "Secret Message" -k "Password I shared with recipient" -P udp -ips 69.69.69.69
@@ -179,7 +179,7 @@ Send 10 encrypted packets
 sudo python eme.py -c 10
 ```
 
-Send a total of 10 encrypted packets with 5 second intervals between each send
+Send a total of 10 encrypted packets with a 5 second interval between each send
 
 ```bash
 sudo python eme.py -c 10 -t 5
