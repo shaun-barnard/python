@@ -26,13 +26,13 @@ MESSAGE = os.getenv("SECRET_MESSAGE")
 I_FACE = os.getenv("I_FACE")
 
 #Config packet
-FRAME_SRC = os.getenv("FRAME_SRC")
 FRAME_DST = os.getenv("FRAME_DST")
-IP_SRC = os.getenv("IP_SRC")
+FRAME_SRC = os.getenv("FRAME_SRC")
 IP_DST = os.getenv("IP_DST")
+IP_SRC = os.getenv("IP_SRC")
 PROTOCOL = os.getenv("PROTOCOL")
-SRC_PORT = os.getenv("SRC_PORT")
-DST_PORT = os.getenv("DST_PORT")
+PORT_DST = os.getenv("PORT_DST")
+PORT_SRC = os.getenv("PORT_SRC")
 
 #Send
 SEND_COUNT = 1
@@ -218,8 +218,8 @@ def sendPacket(i):
     payload = encryptPayload(KEY, MESSAGE + b'\n\n[' + timestamp.encode() + b']')
 
     protocol_dict = {
-        "UDP": UDP(sport=SRC_PORT, dport=DST_PORT),
-        "TCP": TCP(sport=SRC_PORT, dport=DST_PORT)
+        "UDP": UDP(sport=PORT_SRC, dport=PORT_DST),
+        "TCP": TCP(sport=PORT_SRC, dport=PORT_DST)
     }
 
     #Craft a custom Ethernet, IP, and TCP packet
@@ -244,9 +244,9 @@ def main() -> None:
     i = 1
 
     if SEND_COUNT == 0:
-        print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{SRC_PORT}] to [{IP_DST}:{DST_PORT}] every [{SEND_TIMEOUT}] seconds...")
+        print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
     else:
-         print(f"[+] Sending [{SEND_COUNT}] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{SRC_PORT}] to [{IP_DST}:{DST_PORT}] every [{SEND_TIMEOUT}] seconds...")
+         print(f"[+] Sending [{SEND_COUNT}] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
     
     if LISTEN is not True:
         if SEND_COUNT == 0:
