@@ -67,15 +67,15 @@ git clone -n --depth=1 --filter=tree:0 https://github.com/shaunbarnard/python.gi
 cd python
 ```
 
-#### 4. Enable the sparse-checkout feature and specify the folder you want to clone (discord-llm-chatbot)
+#### 4. Enable the sparse-checkout feature and specify the folder you want to clone (encrypted-message-exchanger)
 ```bash
-git sparse-checkout set --no-cone discord-llm-chatbot
+git sparse-checkout set --no-cone encrypted-message-exchanger
 ```
 
-#### 5. Check out the contents of the specified folder (llm-discord-chatbot)
+#### 5. Check out the contents of the specified folder (encrypted-message-exchanger)
 ```bash
 git checkout
-cd discord-llm-chatbot
+cd encrypted-message-exchanger
 ```
 
 #### 6. Install the necessary Python dependencies
