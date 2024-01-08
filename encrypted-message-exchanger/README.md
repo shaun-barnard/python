@@ -20,21 +20,21 @@ Custom Packets: Crafts custom Ethernet, IP, and TCP packets with the specified p
 
 This tool provides various command-line arguments to configure the frame/packet parameters and mode of operation.
 
--c, --send_count: Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1<br>
--f, --filter: Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False<br>
--fd, --frame_dst: Specify the destination MAC address. Default: None<br>
--fs, --frame_src: Specify the source MAC address. Default: None<br>
--i, --iface: Specify the network interface. Default: None<br>
--ip, --ip_dst: Specify the destination IP address. Default: None<br>
--is, --ip_src: Specify the source IP address. Default: None<br>
--k, --key: Specify the encryption key. Default: None<br>
--l, --listen: Specify the mode (listen or send). Default: False<br>
--lp, --listen_port: Specify the mode (listen or send). Default: 80<br>
--m, --message: Specify the secret message. Default: None<br>
--p, --dst_port: Specify the destination port. Default: None<br>
--P, --protocol: Specify the protocol (TCP or UDP). Default: None<br>
--S, --src_port: Specify the source port. Default: None<br>
--t, --send_timeout: Specify the number of seconds to wait before each packet send. Default: 10<br>
+<ins>-c, --send_count:</ins> Specify the number of packets to send. Set 0 to send an unlimited number of packets. Default: 1<br>
+<ins>-f, --filter:</ins> Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR. Default: False<br>
+<ins>-fd, --frame_dst:</ins> Specify the destination MAC address. Default: None<br>
+<ins>-fs, --frame_src:</ins> Specify the source MAC address. Default: None<br>
+<ins>-i, --iface:</ins> Specify the network interface. Default: None<br>
+<ins>-ip, --ip_dst:</ins> Specify the destination IP address. Default: None<br>
+<ins>-is, --ip_src:</ins> Specify the source IP address. Default: None<br>
+<ins>-k, --key:</ins> Specify the encryption key. Default: None<br>
+<ins>-l, --listen:</ins> Specify the mode (listen or send). Default: False<br>
+<ins>-lp, --listen_port:</ins> Specify the mode (listen or send). Default: 80<br>
+<ins>-m, --message:</ins> Specify the secret message. Default: None<br>
+<ins>-p, --dst_port:</ins> Specify the destination port. Default: None<br>
+<ins>-P, --protocol:</ins> Specify the protocol (TCP or UDP). Default: None<br>
+<ins>-S, --src_port:</ins> Specify the source port. Default: None<br>
+<ins>-t, --send_timeout:</ins> Specify the number of seconds to wait before each packet send. Default: 10<br>
 
 ## Install
 
