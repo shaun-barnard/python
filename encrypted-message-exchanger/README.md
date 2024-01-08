@@ -109,7 +109,7 @@ pip install -r requirements.txt
 ####################
 # SECRETS
 ####################
-PRIVATE_KEY="Your key here"
+PRIVATE_KEY="Password I shared with recipient   "
 SECRET_MESSAGE="This is a secret message\n\nFROM: Neo"
 ####################
 # DEFAULT SETTINGS
@@ -118,13 +118,13 @@ I_FACE=""
 ####################
 # FRAME SETTINGS
 ####################
-FRAME_SRC="00:00:00:00:00:00"
 FRAME_DST ="11:11:11:11:11:11"
-IP_SRC ="192.168.1.1"
+FRAME_SRC="00:00:00:00:00:00"
 IP_DST ="192.168.1.2"
+IP_SRC ="192.168.1.1"
+PORT_DST=80
+PORT_SRC=80
 PROTOCOL="TCP"
-SRC_PORT=80
-DST_PORT=80
 ```
 
 ## Run

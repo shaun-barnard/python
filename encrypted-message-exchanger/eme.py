@@ -59,9 +59,9 @@ parser.add_argument("-k", "--key", help="Specify the encryption key.", default=K
 parser.add_argument("-l", "--listen", help="Specify the mode (listen or send).", action='store_true', default=False)
 parser.add_argument("-lp", "--listen-port", help="Specify the mode (listen or send).", default=LISTEN_PORT)
 parser.add_argument("-m", "--message", help="Specify the secret message.", default=MESSAGE)
-parser.add_argument("-p", "--dst_port", help="Specify the destination port.", default=DST_PORT)
+parser.add_argument("-p", "--port_dst", help="Specify the destination port.", default=PORT_DST)
+parser.add_argument("-ps", "--port_src", help="Specify the source port.", default=PORT_SRC)
 parser.add_argument("-P", "--protocol", help="Specify the protocol (TCP or UDP).", default=PROTOCOL)
-parser.add_argument("-S", "--src_port", help="Specify the source port.", default=SRC_PORT)
 parser.add_argument("-t", "--send_timeout", help="Specify the number of seconds to wait before each packet send.", default=SEND_TIMEOUT)
 
 args = parser.parse_args()
@@ -74,8 +74,8 @@ FRAME_DST = args.frame_dst
 IP_SRC = args.ip_src
 IP_DST = args.ip_dst
 PROTOCOL = args.protocol
-SRC_PORT = int(args.src_port)
-DST_PORT = int(args.dst_port)
+PORT_SRC = int(args.port_src)
+PORT_DST = int(args.port_dst)
 
 SEND_COUNT = int(args.send_count)
 SEND_TIMEOUT = int(args.send_timeout)
