@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ``` 
 
 ## Download LLM (Large Language Model)
-Skip if you've already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and download a model.
+Skip this section if you already have a model, otherwise head over to [HuggingFace.co](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending&search=.GGUF) and choose a model to download.
 
 #### If you have shitty internet, you're gonna want to create a custom download script to avoid wanting to punch a hole through your monitor...
 
