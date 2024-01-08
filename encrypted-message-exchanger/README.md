@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/1193946747878260767?color=blue&label=Discord&logo=discord&logoColor=white)](https://discord.gg/KmAkuNyr)
+
 <p align="center">
     <a href="#features" style="font-size: 24px;">Features</a> |
     <a href="#command-line-arguments" style="font-size: 24px;">Command-line Arguments</a> |
