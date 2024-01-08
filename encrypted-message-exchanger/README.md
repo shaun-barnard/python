@@ -130,5 +130,5 @@ DST_PORT=80
 ## Run
 
 ```bash
-python eme.py
+sudo python eme.py
 ```
