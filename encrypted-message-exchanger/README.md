@@ -135,19 +135,13 @@ sudo python eme.py
 
 #### Examples
 
-To monitor using all default settings
+1. Listen for encrypted packets using the default settings:
 
 ```bash
 sudo python eme.py -l
 ```
 
-To list for encrypted packets using the all default settings:
-
-```bash
-sudo python eme.py -l
-```
-
-Send 1 encrypted packet using all the default settings:
+2. Send 1 encrypted packet using the default settings:
 
 ```bash
 sudo python eme.py
