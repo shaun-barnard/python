@@ -238,7 +238,6 @@ def main() -> None:
                 sendPacket()
         else:
             sendPacket()
-
     else:
         listen()
 
