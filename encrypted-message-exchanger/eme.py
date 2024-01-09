@@ -159,8 +159,6 @@ def extractFromPacket(packet):
 
 def listen(iface = False):
 
-    print(PORT_DST)
-
     if FILTER is False:
         if iface is True:
             print(f"[+] Listening for Encrypted frames on [{scapy.interfaces.get_working_if()}] Port [{PORT_DST}]...")
