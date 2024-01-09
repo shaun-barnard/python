@@ -9,7 +9,7 @@
     <a href="#run" style="font-size: 24px;">Run</a>
 </p>
 
-## Python Encrypted Message Exchanger
+## Encrypted Message Exchanger
 
 A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks, using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
@@ -82,7 +82,7 @@ options:
 ## Install
 
 > [!IMPORTANT]
-> Requires atleast Python 3.10 to work.
+> Requires atleast Python 3.10 to work
 
 #### 1. Create and activate a virtual enviroment
 ```bash
