@@ -49,7 +49,7 @@ LISTEN_PORT = 80
 
 parser = argparse.ArgumentParser(description="A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks.")
 parser.add_argument("-c", "--send_count", help="Specify the number of packets to send. Set 0 to send an unlimited number of packets.", default=SEND_COUNT)
-parser.add_argument("-f", "--filter",  choices=["arp", "icmp", "igmp", "ip", "udp", "tcp"], help="Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR", default=FILTER)
+parser.add_argument("-f", "--filter",  choices=["arp", "icmp", "igmp", "ip", "udp", "tcp"], type=str.lower, help="Packet filter: ARP, ICMP, IGMP, IP, UDP, TCP, NOT, AND, OR", default=FILTER)
 parser.add_argument("-fd", "--frame_dst", help="Specify the destination MAC address.", default=FRAME_DST)
 parser.add_argument("-fs", "--frame_src", help="Specify the source MAC address.", default=FRAME_SRC)
 parser.add_argument("-i", "--iface", help="Specify the network interface.", default=I_FACE)
