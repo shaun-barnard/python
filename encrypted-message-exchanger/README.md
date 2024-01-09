@@ -35,7 +35,7 @@ A small command-line Encrypted Message Exchanger that allows the user to craft, 
 ## Command-line Arguments
 
 > [!IMPORTANT]
-> MAC operations are limited to machines directly connected within your subnet. When sending encrypted packets intended for hosts outside your subnet, you need to set [-fs FRAME_SRC] to your router/gateway's MAC address, and [-fs FRAME_SRC] to your computer's MAC address.
+> MAC operations are limited to machines directly connected within your subnet. When sending encrypted packets intended for hosts outside your subnet, you must set [-fs FRAME_SRC] to your router/gateway's MAC address, and [-fs FRAME_SRC] to your computer's MAC address.
 
 This tool provides various command-line arguments to configure the frame/packet parameters and mode of operation.
 
@@ -155,7 +155,7 @@ sudo python eme.py
 ```
 
 > [!IMPORTANT]
-> MAC operations are limited to machines directly connected within your subnet. When sending encrypted packets intended for hosts outside your subnet, you need to set [-fs FRAME_SRC] to your router/gateway's MAC address, and [-fs FRAME_SRC] to your computer's MAC address.
+> MAC operations are limited to machines directly connected within your subnet. When sending encrypted packets intended for hosts outside your subnet, you must set [-fs FRAME_SRC] to your router/gateway's MAC address, and [-fs FRAME_SRC] to your computer's MAC address.
 
 #### Usage Examples
 
