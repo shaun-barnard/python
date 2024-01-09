@@ -245,9 +245,11 @@ def main() -> None:
     i = 1
 
     if SEND_COUNT == 0 and LISTEN is False:
-        print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
-    elif LISTEN is False:
-         print(f"[+] Sending [{SEND_COUNT}] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
+        print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL.upper()}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
+    elif SEND_COUNT == 1 and LISTEN is False:
+         print(f"[+] Sending [{SEND_COUNT}] Encrypted [{PROTOCOL.upper()}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}]...")
+    elif SEND_COUNT > 1 and LISTEN is False:
+        print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL.upper()}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
     
     if LISTEN is not True:
         if SEND_COUNT == 0:
