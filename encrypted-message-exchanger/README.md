@@ -13,10 +13,16 @@
 A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks, using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen1.jpg">
-  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen2.jpg">
-  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen3.jpg">
-  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen4.jpg">
+  ```text
+  sudo python eme.py -l -p 3333 -k "our secret key" -f UDP
+  ```
+  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen1.jpg"><br>
+  ```text
+  sudo python eme.py -m "wake up neo...\\n\\nFROM: the matrix" -k "our secret key" -p 3333 -P udp
+  ```
+  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen2.jpg"><br>
+  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen3.jpg"><br>
+  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen4.jpg"><br>
 </p>
 
 ## Features
