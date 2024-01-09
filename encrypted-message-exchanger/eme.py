@@ -191,7 +191,7 @@ def parsePacket(packet, key):
             protocol = packet[IP].get_field('proto').i2s[packet.proto].upper()
             arrival_time = packet[IP].time
             local_time = time.localtime(time.time())
-            timestamp = time.strftime('%A, %d/%m/%y @ %I:%M:%S %p', local_time)
+            timestamp = time.strftime('%A, %m/%d/%y @ %I:%M:%S %p', local_time)
             decrypted = decryptPayload(payload, key)
             if decrypted is not None and decrypted != "":
                 print("--------------------------------------------------------------------------------------------------------------------------------------------")
