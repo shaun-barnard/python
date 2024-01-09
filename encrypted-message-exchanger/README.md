@@ -1,6 +1,7 @@
 [![Discord](https://img.shields.io/discord/1193946747878260767?color=blue&label=Discord&logo=discord&logoColor=white)](https://discord.gg/KmAkuNyr)
 
 <p align="center">
+<a href="#screenshots" style="font-size: 24px;">Screenshots</a> |
     <a href="#features" style="font-size: 24px;">Features</a> |
     <a href="#command-line-arguments" style="font-size: 24px;">Command-line Arguments</a> |
     <a href="#install" style="font-size: 24px;">Install</a> |
@@ -12,15 +13,17 @@
 
 A small command-line Encrypted Message Exchanger that allows the user to craft, send, recieve, encrypt, and decrypt custom (Blowfish) encrypted payloads with HMAC (SHA256) signatures, across networks, using [Scapy](https://github.com/secdev/scapy) and [Python Cryptography Toolkit](https://github.com/pycrypto/pycrypto).
 
+## Screenshots
+
 <p align="center">
 
   #### Sender
   <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen2.jpg"><br>
-  
+
   #### Recipient
   <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen1.jpg"><br>
-  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen3.jpg"><br>
   <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen4.jpg"><br>
+  <img src="https://raw.githubusercontent.com/shaun-barnard/python/main/encrypted-message-exchanger/screen3.jpg"><br>
 </p>
 
 ## Features
