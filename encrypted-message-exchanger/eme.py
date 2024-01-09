@@ -198,7 +198,7 @@ def parsePacket(packet, key):
                 print(f"[+] ENCRYPTED MESSAGE | [{protocol}] | RECIEVED ON: [{timestamp}] | DST: [{dst_ip}:{dst_port}] | SRC: [{src_ip}:{src_port}]")
                 print("--------------------------------------------------------------------------------------------------------------------------------------------")
                 #print(packet.show())
-                print(decrypted)
+                print(decrypted.replace("\\n", "\n"))
                 print("--------------------------------------------------------------------------------------------------------------------------------------------")
                 print("")
     except ValueError as e:
