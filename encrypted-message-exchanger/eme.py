@@ -74,7 +74,7 @@ FRAME_SRC = args.frame_src
 IP_DST = args.ip_dst
 IP_SRC = args.ip_src
 PROTOCOL = args.protocol
-PORT_DST = int(args.port_dst)
+PORT_DST = int(args.port_dst)   
 PORT_SRC = int(args.port_src)
 
 SEND_COUNT = int(args.send_count)
@@ -158,19 +158,22 @@ def extractFromPacket(packet):
     return iv, ciphertext, hmac_signature
 
 def listen(iface = False):
+
+    print(PORT_DST)
+
     if FILTER is False:
         if iface is True:
-            print(f"[+] Listening for Encrypted frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
+            print(f"[+] Listening for Encrypted frames on [{scapy.interfaces.get_working_if()}] Port [{PORT_DST}]...")
             sniff(iface=iface, filter="ip", prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
         else:
-            print(f"[+] Listening for Encrypted frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
+            print(f"[+] Listening for Encrypted frames on [{scapy.interfaces.get_working_if()}] Port [{PORT_DST}]...")
             sniff(filter="ip", prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
     else:
         if iface is True:
-            print(f"[+] Listening for Encrypted [{FILTER.upper()}] frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
+            print(f"[+] Listening for Encrypted [{FILTER.upper()}] frames on [{scapy.interfaces.get_working_if()}] Port [{PORT_DST}]...")
             sniff(iface=iface, filter=FILTER, prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
         else:
-            print(f"[+] Listening for Encrypted [{FILTER.upper()}] frames on [{scapy.interfaces.get_working_if()}] Port [{LISTEN_PORT}]...")
+            print(f"[+] Listening for Encrypted [{FILTER.upper()}] frames on [{scapy.interfaces.get_working_if()}] Port [{PORT_DST}]...")
             sniff(filter=FILTER, prn=lambda packet: parsePacket(packet, KEY), store=0)#, count=10)
 
     if iface is True:
