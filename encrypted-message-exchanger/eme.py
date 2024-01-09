@@ -213,7 +213,7 @@ def parsePacket(packet, key):
 def sendPacket(i):
     #Setup timestamp
     local_time = time.localtime(time.time())
-    timestamp = time.strftime('%A, %d/%m/%y @ %I:%M:%S %p', local_time)
+    timestamp = time.strftime('%A, %m/%d/%y @ %I:%M:%S %p', local_time)
 
     #Encrypt payload
     payload = encryptPayload(KEY, MESSAGE + b'\n\n[' + timestamp.encode() + b']')
