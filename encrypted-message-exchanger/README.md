@@ -151,6 +151,9 @@ PROTOCOL="TCP"
 sudo python eme.py
 ```
 
+> [!IMPORTANT]
+> MAC operations are limited to machines directly connected within your subnet. When sending encrypted packets intended for hosts outside your subnet, you need to set [-fs FRAME_SRC] to your router/gateway MAC address, and [-fs FRAME_SRC] to your computer's MAC address.
+
 #### Usage Examples
 
 Listen for encrypted packets using the default settings:
