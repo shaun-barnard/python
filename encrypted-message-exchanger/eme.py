@@ -243,9 +243,9 @@ def main() -> None:
 
     i = 1
 
-    if SEND_COUNT == 0:
+    if SEND_COUNT == 0 and LISTEN is False:
         print(f"[+] Sending [Unlimited] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
-    else:
+    elif LISTEN is False:
          print(f"[+] Sending [{SEND_COUNT}] Encrypted [{PROTOCOL}] Frames via [{scapy.interfaces.get_working_if()}] From [{IP_SRC}:{PORT_SRC}] to [{IP_DST}:{PORT_DST}] every [{SEND_TIMEOUT}] seconds...")
     
     if LISTEN is not True:
