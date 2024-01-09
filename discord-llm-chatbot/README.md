@@ -16,7 +16,7 @@ Send and recieve (Blowfish) encrypted frames/packets across networks using this 
 
 > [!IMPORTANT]
 > - Requires atleast Python 3.10 to work<br>
-> - Only tested on a GeForce GPU with 12GB of VRAM. Not sure if GPU's with less VRAM will work properly.
+> - Only tested on a GeForce GPU with 12GB of VRAM. Not sure if cards with less VRAM will work properly.
 
 #### 1. Create and activate a virtual enviroment
 ```bash
